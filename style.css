@@ -1,0 +1,209 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-items: start;
+  padding: 20px 40px;
+  background-color: #333;
+  color: white;
+  grid-area: header;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #f2b02e;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url(бизнес4.webp);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #f2b02e;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #d68c16;
+}
+
+/* Service Section */
+.services {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.service-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.service img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #777;
+}
+
+/* About Section */
+.about {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Team Section */
+.team {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.team-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.team-member {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.testimonial-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonial {
+  background-color: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.testimonial h4 {
+  font-size: 16px;
+  color: #f2b02e;
